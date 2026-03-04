@@ -121,3 +121,29 @@ fig_heat.update_layout(
 )
 
 st.plotly_chart(fig_heat, use_container_width=True)
+
+st.markdown("---")
+st.subheader("Age Group vs Preferred Tool")
+
+age_tool = (
+    filtered_df.groupby(["Preferred Tool", "Age Group"])
+    .size()
+    .reset_index(name="Votes")
+)
+
+fig_age = px.bar(
+    age_tool,
+    x="Preferred Tool",
+    y="Votes",
+    color="Age Group",
+    barmode="group",
+    title="Tool Preference by Age Group",
+    text="Votes"
+)
+
+fig_age.update_layout(
+    xaxis_title="Preferred Tool",
+    yaxis_title="Number of Votes"
+)
+
+st.plotly_chart(fig_age, use_container_width=True)
