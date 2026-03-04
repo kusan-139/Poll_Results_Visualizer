@@ -214,6 +214,23 @@ Similar pipelines are used in:
 
 ---
 
-# 👨‍💻 Author
+## 👤 Author
 
-Data Science Project for learning **survey analytics and visualization pipelines**.
+**Kusan Chakraborty**
+B.Tech – Computer Science & Engineering (Data Science)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+* Use
+* Modify
+* Distribute
+
+This software, provided proper credit is given to the author.
+
+© 2026 Kusan Chakraborty
