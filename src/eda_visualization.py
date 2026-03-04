@@ -133,6 +133,29 @@ sns.heatmap(
 
 plt.title("Gender vs Preferred Tool")
 plt.xlabel("Preferred Tool")
+
+# ----------------------------------
+# 8. Age Group vs Preferred Tool
+# -----------------------------------
+
+plt.figure(figsize=(8,5))
+
+sns.countplot(
+    data=df,
+    x="Preferred Tool",
+    hue="Age Group",
+    palette="Set2"
+)
+
+plt.title("Tool Preference by Age Group")
+plt.xlabel("Preferred Tool")
+plt.ylabel("Number of Votes")
+plt.xticks(rotation=30)
+
+plt.tight_layout()
+
+plt.savefig("plots/age_group_vs_tool.png")
+plt.close()
 plt.ylabel("Gender")
 
 plt.tight_layout()
